@@ -4,7 +4,7 @@ from horn_1_3 import run_sweep_d1_d3
 d1_prec = int(sys.argv[1])
 
 n = 20000
-min_d1, max_d1, step_d1 = 0.01, 0.25, 10**(-d1_pres)
+min_d1, max_d1, step_d1 = 0.01, 0.25, 10**(-d1_prec)
 min_d3, max_d3, step_d3 = 0.1, 5.0, 0.1
 res_arr = run_sweep_d1_d3(n, min_d1, max_d1, step_d1, min_d3, max_d3, step_d3)
 
